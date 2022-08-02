@@ -40,19 +40,39 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-
+function analyzeColor(randomColor){
+   console.log(randomColor)
+}
+console.log(colors);
+// what does it mean to pass a variable to function? how is the syntax supposed to look?
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-
+var randomColor = prompt("What is your favorite color?")
+switch (randomColor) {
+    case "blue":
+        alert("Oh wow blue is also my favorite color too!");
+        break;
+    case "red":
+        alert("Red?...I guess");
+        break;
+    default:
+        alert(randomColor + " isn't my favorite color, but it's still a pretty color");
+        break;
+}
+// I don't know if this is correct but I do have switch statements understood. How do you know when to use a switch statement?
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-
+var userInput = prompt("Pick a color, any color")
+function analyzeColor(userInput){
+    alert(analyzeColor)
+}
+// basically I tried to use a formula and plug in the values.
 /* ########################################################################## */
 
 /**
@@ -104,3 +124,9 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+var pickNumber = confirm('Would you like to enter a number?');
+
+if (pickNumber === "Ok") {
+    prompt("Okay, what number would you like to choose?");
+    alert()
+}
