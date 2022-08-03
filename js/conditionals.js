@@ -22,7 +22,7 @@
  * console.logging the function's return value
  */
 function analyzeColor (color) {
-    if (color === 'blue') {
+    if (color.toString() === 'blue'|| 'Blue') {
         alert('blue is a great color')
     } else {
         alert('Awesomesauce!')
@@ -40,6 +40,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+// pass the randomColor variable to my analyzeColor function
+// console.log the results
 function analyzeColor(randomColor){
    console.log(randomColor)
 }
